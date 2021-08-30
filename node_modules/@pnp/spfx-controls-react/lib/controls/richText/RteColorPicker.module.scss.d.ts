@@ -1,0 +1,31 @@
+declare const styles: {
+    ThemeColorDarker: string;
+    ThemeColorDark: string;
+    ThemeColorDarkAlt: string;
+    ThemeColorPrimary: string;
+    ThemeColorSecondary: string;
+    ThemeColorTertiary: string;
+    ThemeColorNeutralSecondary: string;
+    ThemeColorNeutralPrimaryAlt: string;
+    ThemeColorNeutralPrimary: string;
+    ThemeColorNeutralDark: string;
+    colorPickerButton: string;
+    previewSvg: string;
+    border: string;
+    previewRectangle: string;
+    buttonLabel: string;
+    previewIcon: string;
+    pickerCallout: string;
+    defaultSvg: string;
+    fillThemeColor: string;
+    fillDefaultColor: string;
+    pickerLabel: string;
+    focusedContainer: string;
+    tableRoot: string;
+    tableCell: string;
+    colorCell: string;
+    svg: string;
+    selected: string;
+};
+export default styles;
+//# sourceMappingURL=RteColorPicker.module.scss.d.ts.map

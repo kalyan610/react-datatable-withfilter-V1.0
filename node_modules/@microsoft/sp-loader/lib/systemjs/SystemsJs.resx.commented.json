@@ -1,0 +1,1 @@
+{"_a4wKXyUGuAbOcWmuhzMXpg":{"systemConfigDisabledError":{"comment":"{Locked}An error to show when a user tries to execute System.config(), as that method is disabled.","value":"System.config() is not supported. Use a manifest to specify the configuration."}}}

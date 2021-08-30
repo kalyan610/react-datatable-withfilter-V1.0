@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "9d6e26c1-e57c-4005-ad6a-5b066f1acd65",
+  "alias": "ReactDatatableWebPart",
+  "componentType": "WebPart",
+  
+  "version": "*",
+  "manifestVersion": 2,
+  "supportsFullBleed": true,
+  
+  "requiresCustomScript": false,
+  "supportedHosts": [
+    "SharePointWebPart"
+  ],
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70", 
+      "group": {
+        "default": "Other"
+      },
+      "title": {
+        "default": "react-datatable"
+      },
+      "description": {
+        "default": "Shows the sharepoint list items in data table format with some advanced features."
+      },
+      "officeFabricIconFontName": "Table",
+      "properties": {
+        "title": "TESTING",
+        "enableSorting": true,
+        "enableSearching": true,
+        "enableDownloadAsCsv": true,
+        "enableDownloadAsPdf": true,
+        "enablePagination": true
+      }
+    }
+  ]
+}

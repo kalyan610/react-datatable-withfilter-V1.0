@@ -1,0 +1,1 @@
+{"version":3,"file":"IStockImagesProps.d.ts","sourceRoot":"","sources":["../../../../../src/propertyFields/filePicker/filePickerControls/StockImagesTab/IStockImagesProps.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,cAAc,EAAE,MAAM,IAAI,CAAC;AACpC,OAAO,EAAE,kBAAkB,EAAE,MAAM,yCAAyC,CAAC;AAE7E,MAAM,WAAW,iBAAkB,SAAQ,cAAc;IACvD,QAAQ,EAAE,MAAM,CAAC;IACjB,iBAAiB,EAAE,kBAAkB,CAAC;CACvC"}

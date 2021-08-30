@@ -1,0 +1,2185 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.7.1",
+    "schemaVersion": 1003,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluentui/react-compose!",
+  "docComment": "",
+  "name": "@fluentui/react-compose",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluentui/react-compose!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-compose!BaseSlots:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface BaseSlots "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "BaseSlots",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-compose!BaseSlots#root:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "root: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.ElementType",
+                  "canonicalReference": "@types/react!~React.ElementType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "root",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-compose!ClassDictionary:type",
+          "docComment": "/**\n * Generic set of module to class name map.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ClassDictionary = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, string>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ClassDictionary",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-compose!ClassFunction:type",
+          "docComment": "/**\n * Generic class resolver function type.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ClassFunction = "
+            },
+            {
+              "kind": "Content",
+              "text": "(state: "
+            },
+            {
+              "kind": "Reference",
+              "text": "GenericDictionary",
+              "canonicalReference": "@fluentui/react-compose!GenericDictionary:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", slots: "
+            },
+            {
+              "kind": "Reference",
+              "text": "GenericDictionary",
+              "canonicalReference": "@fluentui/react-compose!GenericDictionary:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "ClassDictionary",
+              "canonicalReference": "@fluentui/react-compose!ClassDictionary:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ClassFunction",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 7
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-compose!ComponentProps:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ComponentProps "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ComponentProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-compose!ComponentProps#as:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "as?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.ElementType",
+                  "canonicalReference": "@types/react!~React.ElementType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "as",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-compose!ComponentProps#className:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "className?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "className",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-compose!ComponentWithAs:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ComponentWithAs<TElementType extends "
+            },
+            {
+              "kind": "Content",
+              "text": "keyof "
+            },
+            {
+              "kind": "Reference",
+              "text": "JSX.IntrinsicElements",
+              "canonicalReference": "@types/react!~__global.JSX.IntrinsicElements:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            },
+            {
+              "kind": "Content",
+              "text": "= "
+            },
+            {
+              "kind": "Content",
+              "text": "'div'"
+            },
+            {
+              "kind": "Content",
+              "text": ", TProps = "
+            },
+            {
+              "kind": "Content",
+              "text": "{}"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Content",
+              "text": "(<TExtendedElementType extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.ElementType",
+              "canonicalReference": "@types/react!~React.ElementType:type"
+            },
+            {
+              "kind": "Content",
+              "text": " = TElementType>(props: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Omit",
+              "canonicalReference": "!Omit:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "PropsOfElement",
+              "canonicalReference": "@fluentui/react-compose!PropsOfElement:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TExtendedElementType>, 'as' | keyof TProps> & {\n    as?: TExtendedElementType;\n} & TProps) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "JSX.Element",
+              "canonicalReference": "@types/react!~__global.JSX.Element:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") & {\n    propTypes?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.WeakValidationMap",
+              "canonicalReference": "@types/react!~React.WeakValidationMap:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps> & {\n        as: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Requireable",
+              "canonicalReference": "@types/react!~React.Requireable:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string | ((props: any, context?: any) => any) | (new (props: any, context?: any) => any)>;\n    };\n    contextTypes?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.ValidationMap",
+              "canonicalReference": "@types/react!~React.ValidationMap:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<any>;\n    defaultProps?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Partial",
+              "canonicalReference": "!Partial:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps & {\n        as: TElementType;\n    }>;\n    displayName?: string;\n    readonly __PRIVATE_PROPS?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Omit",
+              "canonicalReference": "!Omit:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "PropsOfElement",
+              "canonicalReference": "@fluentui/react-compose!PropsOfElement:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TElementType>, 'as' | keyof TProps> & {\n        as?: TElementType;\n    } & TProps;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ComponentWithAs",
+          "typeParameters": [
+            {
+              "typeParameterName": "TElementType",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              }
+            },
+            {
+              "typeParameterName": "TProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 9,
+            "endIndex": 30
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/react-compose!compose:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function compose<TElementType extends "
+            },
+            {
+              "kind": "Content",
+              "text": "keyof "
+            },
+            {
+              "kind": "Reference",
+              "text": "JSX.IntrinsicElements",
+              "canonicalReference": "@types/react!~__global.JSX.IntrinsicElements:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", TInputProps, TInputStylesProps, TParentProps, TParentStylesProps>(input: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Input",
+              "canonicalReference": "@fluentui/react-compose!Input:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TElementType, TInputProps>"
+            },
+            {
+              "kind": "Content",
+              "text": ", inputOptions?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ComposeOptions",
+              "canonicalReference": "@fluentui/react-compose!ComposeOptions:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TInputProps, TInputStylesProps, TParentProps, TParentStylesProps>"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "ComponentWithAs",
+              "canonicalReference": "@fluentui/react-compose!ComponentWithAs:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TElementType, TInputProps & TParentProps>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 10,
+            "endIndex": 12
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "input",
+              "parameterTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 6
+              }
+            },
+            {
+              "parameterName": "inputOptions",
+              "parameterTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 9
+              }
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "TElementType",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TInputProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TInputStylesProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TParentProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TParentStylesProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "compose"
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-compose!ComposedComponent:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ComposedComponent<TProps = "
+            },
+            {
+              "kind": "Content",
+              "text": "{}"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.FunctionComponent",
+              "canonicalReference": "@types/react!~React.FunctionComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps> & {\n    fluentComposeConfig: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Required",
+              "canonicalReference": "!Required:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ComposePreparedOptions",
+              "canonicalReference": "@fluentui/react-compose!ComposePreparedOptions:type"
+            },
+            {
+              "kind": "Content",
+              "text": ">;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ComposedComponent",
+          "typeParameters": [
+            {
+              "typeParameterName": "TProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 9
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-compose!ComposeOptions:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ComposeOptions<TInputProps = "
+            },
+            {
+              "kind": "Content",
+              "text": "{}"
+            },
+            {
+              "kind": "Content",
+              "text": ", TInputStylesProps = "
+            },
+            {
+              "kind": "Content",
+              "text": "{}"
+            },
+            {
+              "kind": "Content",
+              "text": ", TParentProps = "
+            },
+            {
+              "kind": "Content",
+              "text": "{}"
+            },
+            {
+              "kind": "Content",
+              "text": ", TParentStylesProps = "
+            },
+            {
+              "kind": "Content",
+              "text": "{}"
+            },
+            {
+              "kind": "Content",
+              "text": ", TState = "
+            },
+            {
+              "kind": "Content",
+              "text": "TParentProps & TInputProps"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    className?: string;\n    classes?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ClassDictionary",
+              "canonicalReference": "@fluentui/react-compose!ClassDictionary:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "ClassFunction",
+              "canonicalReference": "@fluentui/react-compose!ClassFunction:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | ("
+            },
+            {
+              "kind": "Reference",
+              "text": "ClassDictionary",
+              "canonicalReference": "@fluentui/react-compose!ClassDictionary:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "ClassFunction",
+              "canonicalReference": "@fluentui/react-compose!ClassFunction:type"
+            },
+            {
+              "kind": "Content",
+              "text": ")[];\n    displayName?: string;\n    mapPropsToStylesProps?: (props: TParentStylesProps & TInputProps) => TInputStylesProps;\n    handledProps?: (keyof TInputProps | 'as')[];\n    overrideStyles?: boolean;\n    slots?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.ElementType",
+              "canonicalReference": "@types/react!~React.ElementType:type"
+            },
+            {
+              "kind": "Content",
+              "text": ">;\n    slotProps?: (props: TParentProps & TInputProps) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, object>;\n    shorthandConfig?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ShorthandConfig",
+              "canonicalReference": "@fluentui/react-compose!ShorthandConfig:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<TParentProps & TInputProps>;\n    state?: (props: TState, ref: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Ref",
+              "canonicalReference": "@types/react!~React.Ref:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">, options: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ComposePreparedOptions",
+              "canonicalReference": "@fluentui/react-compose!ComposePreparedOptions:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => any;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ComposeOptions",
+          "typeParameters": [
+            {
+              "typeParameterName": "TInputProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "typeParameterName": "TInputStylesProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            },
+            {
+              "typeParameterName": "TParentProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              }
+            },
+            {
+              "typeParameterName": "TParentStylesProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              }
+            },
+            {
+              "typeParameterName": "TState",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 9,
+                "endIndex": 10
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 11,
+            "endIndex": 34
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-compose!ComposePreparedOptions:type",
+          "docComment": "/**\n * Merged ComposeOptions.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ComposePreparedOptions<TProps = "
+            },
+            {
+              "kind": "Content",
+              "text": "{}"
+            },
+            {
+              "kind": "Content",
+              "text": ", TInputState = "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ", TParentState = "
+            },
+            {
+              "kind": "Content",
+              "text": "TProps"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    className: string;\n    classes: (undefined | "
+            },
+            {
+              "kind": "Reference",
+              "text": "ClassDictionary",
+              "canonicalReference": "@fluentui/react-compose!ClassDictionary:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "ClassFunction",
+              "canonicalReference": "@fluentui/react-compose!ClassFunction:type"
+            },
+            {
+              "kind": "Content",
+              "text": ")[];\n    displayName: string;\n    displayNames: string[];\n    mapPropsToStylesPropsChain: ((props: object) => object)[];\n    render: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ComposeRenderFunction",
+              "canonicalReference": "@fluentui/react-compose!ComposeRenderFunction:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    handledProps: (keyof TProps | 'as')[];\n    overrideStyles: boolean;\n    slots: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.ElementType",
+              "canonicalReference": "@types/react!~React.ElementType:type"
+            },
+            {
+              "kind": "Content",
+              "text": "> & {\n        __self: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.ElementType",
+              "canonicalReference": "@types/react!~React.ElementType:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    };\n    slotProps: ((props: TProps) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, object>)[];\n    state: (props: TParentState, ref: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Ref",
+              "canonicalReference": "@types/react!~React.Ref:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">, options: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ComposePreparedOptions",
+              "canonicalReference": "@fluentui/react-compose!ComposePreparedOptions:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => TInputState;\n    resolveSlotProps: <TResolvedProps>(props: TResolvedProps) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, object>;\n    shorthandConfig: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ShorthandConfig",
+              "canonicalReference": "@fluentui/react-compose!ShorthandConfig:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps>;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ComposePreparedOptions",
+          "typeParameters": [
+            {
+              "typeParameterName": "TProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "typeParameterName": "TInputState",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            },
+            {
+              "typeParameterName": "TParentState",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 7,
+            "endIndex": 32
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-compose!ComposeRenderFunction:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ComposeRenderFunction<TElementType extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.ElementType",
+              "canonicalReference": "@types/react!~React.ElementType:type"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            },
+            {
+              "kind": "Content",
+              "text": "= "
+            },
+            {
+              "kind": "Content",
+              "text": "'div'"
+            },
+            {
+              "kind": "Content",
+              "text": ", TProps = "
+            },
+            {
+              "kind": "Content",
+              "text": "{}"
+            },
+            {
+              "kind": "Content",
+              "text": ", TState = "
+            },
+            {
+              "kind": "Content",
+              "text": "TProps"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Content",
+              "text": "(props: TProps, ref: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Ref",
+              "canonicalReference": "@types/react!~React.Ref:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TElementType extends keyof "
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElementTagNameMap",
+              "canonicalReference": "!HTMLElementTagNameMap:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " ? "
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElementTagNameMap",
+              "canonicalReference": "!HTMLElementTagNameMap:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "[TElementType] : TElementType>, options: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ComposePreparedOptions",
+              "canonicalReference": "@fluentui/react-compose!ComposePreparedOptions:type"
+            },
+            {
+              "kind": "Content",
+              "text": " & {\n    state: any;\n}) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.ReactElement",
+              "canonicalReference": "@types/react!~React.ReactElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | null"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ComposeRenderFunction",
+          "typeParameters": [
+            {
+              "typeParameterName": "TElementType",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              }
+            },
+            {
+              "typeParameterName": "TProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 7
+              }
+            },
+            {
+              "typeParameterName": "TState",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 8,
+                "endIndex": 9
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 10,
+            "endIndex": 21
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-compose!createClassResolver:var",
+          "docComment": "/**\n * `createClassResolver` is a factory function which creates a state to classmap resolver for slot specific class names. It can be used in conjunction with the `compose` option `classes` to inject css modules without writing cx(...) logic manually distributing classnames.\n *\n * Class names which map to slots are automatically distributed to correct slot props.\n *\n * Class names with an underscore are interpretted as enum matchable classes. For example, the class \"size_large\" would be applied to the `root` slot when the component's state contains a prop `size` with a value `large`.\n *\n * Remaining class names would be interpretted as modifiers, applied to the `root` slot when the component `state` contains a truthy matching prop name.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "createClassResolver: "
+            },
+            {
+              "kind": "Content",
+              "text": "(classes: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, string>) => (state: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, any>) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, string>"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "createClassResolver",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 8
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-compose!GenericDictionary:type",
+          "docComment": "/**\n * Generic name to any dictionary.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type GenericDictionary = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, any>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "GenericDictionary",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-compose!Input:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type Input<TElementType extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.ElementType",
+              "canonicalReference": "@types/react!~React.ElementType:type"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            },
+            {
+              "kind": "Content",
+              "text": "= "
+            },
+            {
+              "kind": "Content",
+              "text": "'div'"
+            },
+            {
+              "kind": "Content",
+              "text": ", TProps = "
+            },
+            {
+              "kind": "Content",
+              "text": "{}"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Reference",
+              "text": "InputComposeComponent",
+              "canonicalReference": "@fluentui/react-compose!InputComposeComponent:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps> | "
+            },
+            {
+              "kind": "Reference",
+              "text": "ComposeRenderFunction",
+              "canonicalReference": "@fluentui/react-compose!ComposeRenderFunction:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TElementType, TProps & {\n    as?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.ElementType",
+              "canonicalReference": "@types/react!~React.ElementType:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n}>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "Input",
+          "typeParameters": [
+            {
+              "typeParameterName": "TElementType",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              }
+            },
+            {
+              "typeParameterName": "TProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 7
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 8,
+            "endIndex": 14
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-compose!InputComposeComponent:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type InputComposeComponent<TProps = "
+            },
+            {
+              "kind": "Content",
+              "text": "{}"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.FunctionComponent",
+              "canonicalReference": "@types/react!~React.FunctionComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps> & {\n    fluentComposeConfig?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Required",
+              "canonicalReference": "!Required:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ComposePreparedOptions",
+              "canonicalReference": "@fluentui/react-compose!ComposePreparedOptions:type"
+            },
+            {
+              "kind": "Content",
+              "text": ">;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "InputComposeComponent",
+          "typeParameters": [
+            {
+              "typeParameterName": "TProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 9
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/react-compose!mergeProps:function(1)",
+          "docComment": "/**\n * Merge props takes in state and compose options, and resolves slots and slotProps. It's expected that the component will call mergeProps(state, options) from within render; after resolving state and before rendering slots and slotProps.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function mergeProps<TProps, TState = "
+            },
+            {
+              "kind": "Content",
+              "text": "TProps"
+            },
+            {
+              "kind": "Content",
+              "text": ", TSlots = "
+            },
+            {
+              "kind": "Reference",
+              "text": "GenericDictionary",
+              "canonicalReference": "@fluentui/react-compose!GenericDictionary:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", TSlotProps = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    [key in keyof TSlots]: any;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ">(state: "
+            },
+            {
+              "kind": "Content",
+              "text": "TState"
+            },
+            {
+              "kind": "Content",
+              "text": ", options: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ComposePreparedOptions",
+              "canonicalReference": "@fluentui/react-compose!ComposePreparedOptions:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps, TState>"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "MergePropsResult",
+              "canonicalReference": "@fluentui/react-compose!MergePropsResult:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TState, TSlots, TSlotProps>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 12,
+            "endIndex": 14
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "state",
+              "parameterTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              }
+            },
+            {
+              "parameterName": "options",
+              "parameterTypeTokenRange": {
+                "startIndex": 9,
+                "endIndex": 11
+              }
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "TProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TState",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "typeParameterName": "TSlots",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            },
+            {
+              "typeParameterName": "TSlotProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              }
+            }
+          ],
+          "name": "mergeProps"
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-compose!MergePropsResult:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type MergePropsResult<TState extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "GenericDictionary",
+              "canonicalReference": "@fluentui/react-compose!GenericDictionary:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", TSlots = "
+            },
+            {
+              "kind": "Reference",
+              "text": "GenericDictionary",
+              "canonicalReference": "@fluentui/react-compose!GenericDictionary:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", TSlotProps = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    [key in keyof TSlots]: any;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    state: TState;\n    slots: TSlots;\n    slotProps: TSlotProps;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "MergePropsResult",
+          "typeParameters": [
+            {
+              "typeParameterName": "TState",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TSlots",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            },
+            {
+              "typeParameterName": "TSlotProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 7,
+            "endIndex": 8
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/react-compose!mergeSlotProp:function(1)",
+          "docComment": "/**\n * Merge props for a slot to a slot prop.\n *\n * @param slotProp - Slot prop.\n *\n * @param slotProps - Props for the slot.\n *\n * @param mappedProp - Optional mapped prop name for the slotProp after merging.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function mergeSlotProp<TProps>(slotProp: "
+            },
+            {
+              "kind": "Reference",
+              "text": "SlotProp",
+              "canonicalReference": "@fluentui/react-compose!SlotProp:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps>"
+            },
+            {
+              "kind": "Content",
+              "text": ", slotProps: "
+            },
+            {
+              "kind": "Content",
+              "text": "TProps"
+            },
+            {
+              "kind": "Content",
+              "text": ", mappedProp?: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "SlotProp",
+              "canonicalReference": "@fluentui/react-compose!SlotProp:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 8,
+            "endIndex": 10
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "slotProp",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "parameterName": "slotProps",
+              "parameterTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              }
+            },
+            {
+              "parameterName": "mappedProp",
+              "parameterTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 7
+              }
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "TProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "mergeSlotProp"
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-compose!ObjectSlotProp:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ObjectSlotProp<TProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "GenericDictionary",
+              "canonicalReference": "@fluentui/react-compose!GenericDictionary:type"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Content",
+              "text": "TProps & {\n    children?: TProps['children'] | "
+            },
+            {
+              "kind": "Reference",
+              "text": "SlotPropRenderFunction",
+              "canonicalReference": "@fluentui/react-compose!SlotPropRenderFunction:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps>;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ObjectSlotProp",
+          "typeParameters": [
+            {
+              "typeParameterName": "TProps",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-compose!PropsOfElement:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type PropsOfElement<E extends "
+            },
+            {
+              "kind": "Content",
+              "text": "keyof "
+            },
+            {
+              "kind": "Reference",
+              "text": "JSX.IntrinsicElements",
+              "canonicalReference": "@types/react!~__global.JSX.IntrinsicElements:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.JSXElementConstructor",
+              "canonicalReference": "@types/react!~React.JSXElementConstructor:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<any> | "
+            },
+            {
+              "kind": "Reference",
+              "text": "ComponentWithAs",
+              "canonicalReference": "@fluentui/react-compose!ComponentWithAs:type"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Content",
+              "text": "E extends {\n    __PRIVATE_PROPS: any;\n} ? E['__PRIVATE_PROPS'] : "
+            },
+            {
+              "kind": "Reference",
+              "text": "JSX.LibraryManagedAttributes",
+              "canonicalReference": "@types/react!~__global.JSX.LibraryManagedAttributes:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<E, "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.ComponentPropsWithRef",
+              "canonicalReference": "@types/react!~React.ComponentPropsWithRef:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<E>>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "PropsOfElement",
+          "typeParameters": [
+            {
+              "typeParameterName": "E",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 7
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 8,
+            "endIndex": 13
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-compose!ShorthandConfig:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ShorthandConfig<TProps> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "TProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "ShorthandConfig",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-compose!ShorthandConfig#allowsJSX:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "allowsJSX?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "allowsJSX",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-compose!ShorthandConfig#mappedArrayProp:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "mappedArrayProp?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "keyof TProps"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "mappedArrayProp",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-compose!ShorthandConfig#mappedProp:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "mappedProp?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "keyof TProps"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "mappedProp",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-compose!SlotProp:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type SlotProp<TProps> = "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.ReactChild",
+              "canonicalReference": "@types/react!~React.ReactChild:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.ReactNodeArray",
+              "canonicalReference": "@types/react!~React.ReactNodeArray:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.ReactPortal",
+              "canonicalReference": "@types/react!~React.ReactPortal:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | boolean | null | undefined | "
+            },
+            {
+              "kind": "Reference",
+              "text": "ObjectSlotProp",
+              "canonicalReference": "@fluentui/react-compose!ObjectSlotProp:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SlotProp",
+          "typeParameters": [
+            {
+              "typeParameterName": "TProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 9
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-compose!SlotPropRenderFunction:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type SlotPropRenderFunction<TProps> = "
+            },
+            {
+              "kind": "Content",
+              "text": "(Component: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.ElementType",
+              "canonicalReference": "@types/react!~React.ElementType:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps>, props: TProps) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.ReactNode",
+              "canonicalReference": "@types/react!~React.ReactNode:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SlotPropRenderFunction",
+          "typeParameters": [
+            {
+              "typeParameterName": "TProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-compose!SlotProps:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type SlotProps<TSlots extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "BaseSlots",
+              "canonicalReference": "@fluentui/react-compose!BaseSlots:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", TProps, TRootProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.HTMLAttributes",
+              "canonicalReference": "@types/react!~React.HTMLAttributes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    [key in keyof "
+            },
+            {
+              "kind": "Reference",
+              "text": "Omit",
+              "canonicalReference": "!Omit:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TSlots, 'root'>]: key extends keyof TProps ? TProps[key] : any;\n} & {\n    root: TRootProps;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SlotProps",
+          "typeParameters": [
+            {
+              "typeParameterName": "TSlots",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TRootProps",
+              "constraintTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 8,
+            "endIndex": 11
+          }
+        }
+      ]
+    }
+  ]
+}

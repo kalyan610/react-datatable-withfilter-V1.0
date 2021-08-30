@@ -1,0 +1,1 @@
+{"version":3,"file":"IRecentFilesTabProps.d.ts","sourceRoot":"","sources":["../../../../../src/propertyFields/filePicker/filePickerControls/RecentFilesTab/IRecentFilesTabProps.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,cAAc,EAAE,MAAM,IAAI,CAAC;AACpC,OAAO,EAAE,kBAAkB,EAAE,MAAM,yCAAyC,CAAC;AAE7E,MAAM,WAAW,oBAAqB,SAAQ,cAAc;IAC1D,iBAAiB,EAAE,kBAAkB,CAAC;CACvC"}

@@ -1,0 +1,31 @@
+declare const styles: {
+    defaultFontColor: string;
+    defaultFontFamily: string;
+    defaultFontSize: string;
+    lineColor: string;
+    titleColor: string;
+    titleFont: string;
+    titleFontSize: string;
+    legendColor: string;
+    legendFont: string;
+    legendFontSize: string;
+    tooltipFontSize: string;
+    tooltipFont: string;
+    tooltipBodyColor: string;
+    tooltipTitleFont: string;
+    tooltipTitleColor: string;
+    tooltipTitleFontSize: string;
+    tooltipFooterColor: string;
+    tooltipFooterFont: string;
+    tooltipFooterFontSize: string;
+    tooltipBackgroundColor: string;
+    tooltipBorderColor: string;
+    scaleFontColor: string;
+    scaleFont: string;
+    scaleFontSize: string;
+    chartComponent: string;
+    themed: string;
+    accessibleTable: string;
+};
+export default styles;
+//# sourceMappingURL=ChartControl.module.scss.d.ts.map

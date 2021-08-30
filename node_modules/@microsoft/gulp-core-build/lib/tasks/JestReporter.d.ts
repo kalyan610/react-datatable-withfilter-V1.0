@@ -1,0 +1,11 @@
+declare const DEFAULT_REPORTER: any;
+declare const JestReporter_base: new (globalConfig: any) => any;
+/**
+ * Jest logs message to stderr. This class is to override that behavior so that
+ * rush does not get confused.
+ */
+declare class JestReporter extends JestReporter_base {
+    constructor(globalConfig: any);
+    log(message: string): void;
+}
+//# sourceMappingURL=JestReporter.d.ts.map

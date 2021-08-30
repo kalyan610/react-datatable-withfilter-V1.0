@@ -1,0 +1,1 @@
+{"version":3,"file":"BrowserSupport.d.ts","sourceRoot":"../../../../src/","sources":["utilities/BrowserSupport.ts"],"names":[],"mappings":"AAAA,OAAO,EAIL,qBAAqB,EAEtB,MAAM,4BAA4B,CAAC;AAIpC,MAAM,CAAC,OAAO,OAAO,cAAc;WACnB,uBAAuB,IAAI,qBAAqB;CA0C/D"}

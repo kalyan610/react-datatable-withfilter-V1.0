@@ -1,0 +1,1 @@
+{"version":3,"file":"IOneDriveFilesTabProps.d.ts","sourceRoot":"","sources":["../../../../../src/propertyFields/filePicker/filePickerControls/OneDriveFilesTab/IOneDriveFilesTabProps.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,cAAc,EAAE,MAAM,qBAAqB,CAAC;AACrD,OAAO,EAAE,eAAe,EAAE,MAAM,sCAAsC,CAAC;AAEvE,MAAM,WAAW,sBAAuB,SAAQ,cAAc;IAC5D,eAAe,EAAE,eAAe,CAAC;CAClC"}

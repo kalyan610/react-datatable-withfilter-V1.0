@@ -1,0 +1,1 @@
+{"version":3,"file":"IPropertyFieldFolderPickerState.d.ts","sourceRoot":"","sources":["../../../src/propertyFields/folderPicker/IPropertyFieldFolderPickerState.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,uCAAuC,CAAC;AAEhE,MAAM,WAAW,+BAA+B;IAC5C,SAAS,EAAE,OAAO,CAAC;IACnB,cAAc,EAAE,OAAO,CAAC;CAC3B"}

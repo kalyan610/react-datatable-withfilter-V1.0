@@ -1,0 +1,96 @@
+{
+  "id": "9d6e26c1-e57c-4005-ad6a-5b066f1acd65",
+  "alias": "ReactDatatableWebPart",
+  "componentType": "WebPart",
+  "version": "1.1.0",
+  "manifestVersion": 2,
+  "supportsFullBleed": true,
+  "requiresCustomScript": false,
+  "supportedHosts": [
+    "SharePointWebPart"
+  ],
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": {
+        "default": "Other"
+      },
+      "title": {
+        "default": "react-datatable"
+      },
+      "description": {
+        "default": "Shows the sharepoint list items in data table format with some advanced features."
+      },
+      "officeFabricIconFontName": "Table",
+      "properties": {
+        "title": "TESTING",
+        "enableSorting": true,
+        "enableSearching": true,
+        "enableDownloadAsCsv": true,
+        "enableDownloadAsPdf": true,
+        "enablePagination": true
+      }
+    }
+  ],
+  "loaderConfig": {
+    "entryModuleId": "react-datatable-web-part",
+    "internalModuleBaseUrls": [
+      "https://localhost:4321/"
+    ],
+    "scriptResources": {
+      "react-datatable-web-part": {
+        "type": "path",
+        "path": "dist/react-datatable-web-part.js"
+      },
+      "ControlStrings": {
+        "defaultPath": "node_modules/@pnp/spfx-controls-react/lib/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "ReactDatatableWebPartStrings": {
+        "defaultPath": "lib/webparts/reactDatatable/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "PropertyControlStrings": {
+        "defaultPath": "node_modules/@pnp/spfx-property-controls/lib/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "@microsoft/sp-property-pane": {
+        "type": "component",
+        "version": "1.11.0",
+        "id": "f9e737b7-f0df-4597-ba8c-3060f82380db"
+      },
+      "@microsoft/sp-lodash-subset": {
+        "type": "component",
+        "version": "1.11.0",
+        "id": "73e1dc6c-8441-42cc-ad47-4bd3659f8a3a"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "version": "1.11.0",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "version": "1.11.0",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+      },
+      "react": {
+        "type": "component",
+        "version": "16.8.5",
+        "id": "0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d",
+        "failoverPath": "node_modules/react/dist/react.js"
+      },
+      "react-dom": {
+        "type": "component",
+        "version": "16.8.5",
+        "id": "aa0a46ec-1505-43cd-a44a-93f3a5aa460a",
+        "failoverPath": "node_modules/react-dom/dist/react-dom.js"
+      },
+      "@microsoft/sp-http": {
+        "type": "component",
+        "version": "1.11.0",
+        "id": "c07208f0-ea3b-4c1a-9965-ac1b825211a6"
+      }
+    }
+  }
+}

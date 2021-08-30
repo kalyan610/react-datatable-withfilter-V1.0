@@ -1,0 +1,1 @@
+{"version":3,"file":"IFolderExplorerState.d.ts","sourceRoot":"","sources":["../../../../../src/propertyFields/folderPicker/controls/FolderExplorer/IFolderExplorerState.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,6CAA6C,CAAC;AAEtE,MAAM,WAAW,oBAAoB;IACnC,cAAc,EAAE,OAAO,CAAC;IACxB,OAAO,EAAE,OAAO,EAAE,CAAC;IACnB,cAAc,EAAE,OAAO,CAAC;CACzB"}
